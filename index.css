@@ -1,0 +1,113 @@
+body{
+    display: flex;
+    background-image: url("assets/zaun-3830x1644-2-desktop.jpg");
+    background-position:top;
+    background-repeat: no-repeat;
+    flex-direction: column;
+    flex-wrap: wrap;
+    z-index: 1;
+}
+*{font-family: 'Work Sans', sans-serif;
+}
+html, body {
+        max-width: 100%;
+        overflow-x: hidden;
+    }
+    
+nav{
+    margin-top: 1em;
+    position: sticky;
+    z-index: 2;
+    overflow: hidden;
+    font-weight: bolder;
+}
+nav a{
+    text-align: center;
+    color: white;
+    display: inline;
+    text-decoration: none;
+    padding: .5em;
+
+}
+.searchSignin{
+    float: right;
+    padding: 1em;
+
+}
+.search{
+    border: 0.5px solid white;
+    border-radius: 55px;
+    padding: 10px;
+    text-align: center;
+}
+.signin{
+    border: 0.5px solid white;
+    border-radius: 55px;
+    padding: 10px;
+    text-align: center;
+}
+
+.netflix{
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    justify-items: center;
+    justify-content: space-between;
+    padding: 1em;
+    z-index: 1;
+    flex: 1;
+    top: 6em;
+    width: 33vw;
+    min-width: 30em;
+    max-height: fit-content;
+}
+
+.netflix .arcaneLogo{
+    position: relative;
+    max-width: 100%;
+    max-width: 90vw;
+    height: auto;
+    border: 0;
+    z-index: 3;
+    padding: 2em;
+    flex 3;}
+
+.netflix .caption{
+    text-align: center;
+    position: relative;
+    color:white;
+    font-size: 28px;
+    font-weight: bolder;
+    flex: 1;
+}
+.netflix a{
+    text-decoration: none;
+    padding: 16px 28px;
+    background: linear-gradient(135deg,#ba8964 0,#d1ac90 100%);
+    color: #0a0a0a;
+    border-radius: 24px;
+    border: 0;
+    border-radius: 15px;
+    font-size: 1.5em;
+    font-weight: bolder;
+    min-height: 29px;
+    min-width: 175px;
+    max-width: fit-content;
+    margin-top: 1em;
+    text-align: center;
+    align-self: center;
+    flex: 0;
+}
+.netflix a:hover{
+    transition: all 0.25s ease-in;
+    box-shadow:15px 10px 75px 20px rgb(186 137 100 /35%);
+    color: white;
+}
+/*flex whats happening?
+I ran out of time. I realise i need to make the background
+apart of a wrapper that contains the nav and header
+its messing with the other parts of the page I am trying to emulate.
+I am a little weak with css for now and i know it.
+I usually reverse engineer problems i run into and its way slow when it comes to css.
+I feel learning to use a framework would solve my issue.
+*/
